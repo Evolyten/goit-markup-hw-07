@@ -1,0 +1,54 @@
+.nav{
+    @extend %flex-vertical-centre;
+}
+
+.nav__logo--second {
+    color: $black-color;
+}
+
+.nav__list {
+    display: flex;
+    margin-left: 93px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav__link {
+    color: $main-color;
+    position: relative;
+    padding: 32px 0;
+    &::after{
+        position: absolute;
+        display: block;
+        content: '';
+        width: 100%;
+        bottom: -1px;
+        border-bottom: 4px solid $link-color;
+        border-radius: 2px;
+        transform: scaleX(0);
+        @include transition();
+           
+    }
+    
+    &:hover,
+    &:focus{
+        color:$link-color;
+    }
+
+}
+.nav__link--current{
+    color: $link-color;
+    &.nav__link::after{
+        transform: scaleX(1);
+    }
+}
+.nav__item{
+    &:hover .nav__link::after{
+        transform: scaleX(1);
+        @include transition;
+        }
+    }

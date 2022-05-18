@@ -1,0 +1,41 @@
+.service {
+    padding-top: 0;
+}
+
+.service__head{
+    @extend %main-head;
+}
+
+.service__list{
+    display: flex;
+    
+}
+.service__item{
+    position: relative;
+    width: calc((100% - 60px)/3);
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+.service__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+}
+.service__content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(47, 48, 58, 0.8);
+    padding: 27px 0;
+    width: 100%;
+    text-align: center;
+}
+.service__description{
+    font-size: 16px;
+    color: $white-color;
+    text-transform: uppercase;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}

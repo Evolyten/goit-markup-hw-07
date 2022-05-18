@@ -1,0 +1,3 @@
+@mixin transition($object:transform) {
+    transition: $object 250ms $cubic--bezier
+}
