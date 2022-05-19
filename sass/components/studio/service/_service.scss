@@ -19,8 +19,8 @@
 }
 .service__img{
     display: block;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     
 }
 .service__content{
