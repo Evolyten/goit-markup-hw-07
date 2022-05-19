@@ -1,5 +1,5 @@
 .projects__btns{
-    @extend %flex-horizontal-centre;
+    @include flex(center,'');
     margin-bottom: 50px;
 }
 
@@ -10,14 +10,9 @@
 }
 
 .projects__btn {
+    @include text-style(16px, 500, 0.03em,$main-color, 1.62);
     padding: 6px 22px;
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: $main-color;
     background: $bg-color;
     border-radius: 4px;
     border: none;

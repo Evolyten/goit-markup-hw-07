@@ -32,17 +32,11 @@
     text-align: center;
 }
 .member__name{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
+    @include text-style(16px, 500,0.03em,'',1.18);
     margin-bottom: 10px;
 }
 .member__position{
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    color: $text-color;
+    @include text-style(16px,'', 0.03em, $text-color, 1.18);
     margin-bottom: 16px;
 }
 

@@ -1,9 +1,5 @@
 .logo {
     font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    letter-spacing: 0.03em;
-    line-height: 1.2;
-    color: $link-color;
+    @include text-style(26px, 700, 0.03em,$link-color, 1.2);
     padding: 24px 0;
 }

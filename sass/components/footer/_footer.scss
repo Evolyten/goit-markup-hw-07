@@ -45,12 +45,8 @@
 }
 
 .footer__head{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include text-style(14px, 700,0.03em,$white-color,1.14 );
     text-transform: uppercase;
-    color: $white-color;
     margin-bottom: 20px;
 }
 

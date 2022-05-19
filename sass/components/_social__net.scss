@@ -1,5 +1,5 @@
 .social{
-    @extend %flex-horizontal-centre;
+    @include flex(center,'');
 }
 .social__item{
     &:not(:last-child){
@@ -7,7 +7,7 @@
     }
 }
 .social__link{
-    @extend %flex-centre;
+    @include flex(center, center);
     width: 40px;
     height: 40px;
     border-radius: 50%;

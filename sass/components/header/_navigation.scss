@@ -1,6 +1,5 @@
 .nav{
-    @extend %flex-vertical-centre;
-    margin-left: 93px;
+    @include flex('', center);
 }
 
 .nav__logo--second {
@@ -8,11 +7,10 @@
 }
 
 .nav__list {
-    display: flex;
+    @include text-style('', 500, 0.02em, '', 1.14);
+    @include flex('','');
+    margin-left: 93px;
    
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
 }
 .nav__item:not(:last-child) {
     margin-right: 50px;
