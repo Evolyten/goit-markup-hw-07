@@ -29,7 +29,7 @@
     width: 528px;
     height: 581px;
     background: $white-color;
-    transition: transform 1000ms $cubic--bezier;
+    transition: transform 1000ms $cubic--bezier, opacity 100ms $cubic--bezier;
     padding: 40px;
 }
 .modal__close {
