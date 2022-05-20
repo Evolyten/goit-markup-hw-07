@@ -17,6 +17,7 @@
 }
 
 .nav__link {
+    display: block;
     color: $main-color;
     position: relative;
     padding: 32px 0;
@@ -45,8 +46,9 @@
         transform: scaleX(1);
     }
 }
-.nav__item{
-    &:hover .nav__link::after{
+.nav__link{
+    &:hover::after,
+    &:focus::after {
         transform: scaleX(1);
         @include transition;
         }
