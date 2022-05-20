@@ -44,6 +44,7 @@
     right: 8px;
 
 }
+
 .svg__close {
     @include transition(fill);
     .modal__close:hover &,
@@ -122,12 +123,17 @@
         border-color: $link-color;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
         }
+        &:focus+.icon__checkbox {
+            border-color: $link-color;
+            @include transition(border-color);
+            }
     }
 
 .checkbox__label {
     @include flex('',center);
     @include text-style(14px, '', 0.03em,$text-color, 1.71);
     margin-bottom: 30px;
+    
 }
 
 .icon__checkbox {
@@ -149,3 +155,5 @@
     display: block;
     margin: 0 auto;
 }
+
+

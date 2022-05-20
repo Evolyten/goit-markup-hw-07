@@ -452,7 +452,7 @@ p {
 }
 
 .logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -873,6 +873,8 @@ p {
   font-size: 16px;
   line-height: 1.25;
   cursor: text;
+  -webkit-transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__input::-webkit-input-placeholder {
@@ -901,21 +903,27 @@ p {
 
 .footer__input:focus {
   outline: 1px solid #2196F3;
+  -webkit-transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__btn {
-  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 29px;
+  padding-right: 29px;
   text-align: left;
   margin-left: 12px;
 }
 
 .subscribe__svg {
-  position: absolute;
-  right: 29px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   fill: #fff;
 }
 
@@ -1270,6 +1278,12 @@ p {
   border-color: #2196F3;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.checkbox:focus + .icon__checkbox {
+  border-color: #2196F3;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox__label {

@@ -76,6 +76,7 @@
     font-size: 16px;
     line-height: 1.25;
     cursor: text;
+    @include transition(outline);
     &::placeholder{
         font-size: 16px;
         line-height: 1.25;
@@ -83,21 +84,21 @@
     }
     &:focus{
         outline: 1px solid $link-color;
+        @include transition(outline);
     }
 }
 
 .footer__btn{
     @extend %main-btn;
-    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 29px;
+    padding-right: 29px;
     text-align: left;
     margin-left: 12px;
 }
 
 .subscribe__svg{
-    position: absolute;
-    right: 29px;
-    top: 50%;
-    transform: translateY(-50%);
     fill: $white-color;
 }
