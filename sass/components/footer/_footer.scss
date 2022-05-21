@@ -89,7 +89,6 @@
 }
 
 .footer__btn{
-    @extend %main-btn;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
